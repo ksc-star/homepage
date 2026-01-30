@@ -8,3 +8,16 @@ margin: 0;
 padding: 0;
 background-color: #f5f5f5;
 }
+/* Projects grid (desktop) */
+.projects {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+}
+/* Mobile (small screens) */
+@media (max-width: 768px) {
+.projects {
+grid-template-columns: 1fr; /* Single column */
+}
+.hero h1 { font-size: 2em; }
+}
